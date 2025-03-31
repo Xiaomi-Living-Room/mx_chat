@@ -1,0 +1,45 @@
+name: smart_input_method
+description: 智能输入法App UI设计
+
+# 发布版本号
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  provider: ^6.0.5  # 状态管理
+  flutter_svg: ^2.0.5  # SVG图像支持
+  shared_preferences: ^2.1.1  # 本地存储
+  flutter_keyboard_visibility: ^5.4.1  # 键盘可见性检测
+  vibration: ^1.7.7  # 振动反馈
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
+    - family: NotoSansSC
+      fonts:
+        - asset: assets/fonts/NotoSansSC-Regular.ttf
+        - asset: assets/fonts/NotoSansSC-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSansSC-Light.ttf
+          weight: 300
